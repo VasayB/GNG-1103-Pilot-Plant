@@ -8,28 +8,40 @@ public class AudioManager : MonoBehaviour
     [Header("--------Audio Clip--------")]
     public AudioClip background;
 
-    private static AudioManager instance;
+    public static AudioManager Instance { get; private set; }
 
     void Awake()
     {
         // Ensure only one AudioManager exists
-        if (instance == null)
+        if (Instance == null)
         {
-            instance = this;
-            DontDestroyOnLoad(gameObject); // ✅ Keeps it alive between scenes
+            Instance = this;
+            DontDestroyOnLoad(gameObject); // Keeps music playing between scenes
         }
         else
         {
-            Destroy(gameObject); // Prevent duplicates
+            Destroy(gameObject);
             return;
         }
 
-        // Optional: Start playing music automatically
         if (musicSource != null && background != null)
         {
             musicSource.clip = background;
-            musicSource.loop = true; // ✅ Loops the background music
+            musicSource.loop = true;
             musicSource.Play();
         }
+    }
+
+    // 🎚 Change volume
+    public void SetVolume(float volume)
+    {
+        if (musicSource != null)
+            musicSource.volume = volume;
+    }
+
+    // Optional getter
+    public float GetVolume()
+    {
+        return musicSource != null ? musicSource.volume : 0f;
     }
 }
