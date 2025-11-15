@@ -1,18 +1,16 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
     [Header("--------Panels--------")]
-    [SerializeField] private GameObject optionsPanel; // Drag your Options Panel here in the Inspector
+    [SerializeField] private GameObject optionsPanel;
 
-    // 🎮 Load Scene
-    public void Play()
+    // 🎮 Start Tour → must do quiz first
+    public void StartTour()
     {
-        Debug.Log("Play button clicked!");
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        Debug.Log("Start Tour clicked → loading Quiz scene...");
+        SceneManager.LoadScene("Quiz");   // Your quiz scene
     }
 
     // 🚪 Quit Game
@@ -26,19 +24,13 @@ public class MainMenu : MonoBehaviour
     public void OpenOptions()
     {
         if (optionsPanel != null)
-        {
             optionsPanel.SetActive(true);
-            Debug.Log("Options panel opened!");
-        }
     }
 
     // ❌ Close Options Menu
     public void CloseOptions()
     {
         if (optionsPanel != null)
-        {
             optionsPanel.SetActive(false);
-            Debug.Log("Options panel closed!");
-        }
     }
 }
