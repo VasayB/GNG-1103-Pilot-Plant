@@ -2,12 +2,14 @@ using UnityEngine;
 
 public class FaceCamera : MonoBehaviour
 {
+    public Camera mainCamera; // assign this in Inspector (optional)
+
     void LateUpdate()
     {
-        if (Camera.main != null)
+        if(mainCamera != null)
         {
-            transform.LookAt(Camera.main.transform);
-            transform.rotation = Quaternion.LookRotation(transform.position - Camera.main.transform.position);
+            transform.LookAt(mainCamera.transform);
+            transform.Rotate(0f, 180f, 0f); // flip front to camera
         }
     }
 }
