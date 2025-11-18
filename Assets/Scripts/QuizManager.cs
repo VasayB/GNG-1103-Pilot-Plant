@@ -24,8 +24,17 @@ public class QuizManager : MonoBehaviour
     public Slider progressSlider;       
     private int score = 0;
 
+    [Header("Audio")]
+    public AudioClip correctSound;
+    public AudioClip wrongSound;
+    private AudioSource audioSource;
+
     void Start()
     {
+        // Setup AudioSource
+        audioSource = gameObject.AddComponent<AudioSource>();
+        audioSource.playOnAwake = false;
+
         if (progressSlider != null)
         {
             progressSlider.minValue = 0;
@@ -43,8 +52,8 @@ public class QuizManager : MonoBehaviour
         
         questions[index].panel.SetActive(true);
         
-        answerTexts=questions[index].answerTexts;
-        correctAnswerIndex=questions[index].correctAnswerIndex;
+        answerTexts = questions[index].answerTexts;
+        correctAnswerIndex = questions[index].correctAnswerIndex;
         
         ResetQuestion();    
     }
@@ -53,28 +62,39 @@ public class QuizManager : MonoBehaviour
     {
         if (answered) return;
 
-        for(int i=0;i<answerTexts.Length;i++)
+        for(int i = 0; i < answerTexts.Length; i++)
         {
-            if (i==correctAnswerIndex)
-                answerTexts[i].color=Color.green;
-            else if (i==index)
-                answerTexts[i].color=Color.red;
+            if (i == correctAnswerIndex)
+                answerTexts[i].color = Color.green;
+            else if (i == index)
+                answerTexts[i].color = Color.red;
             else
-                answerTexts[i].color=Color.white;        
+                answerTexts[i].color = Color.white;        
         }
-        if (index==correctAnswerIndex)
+
+        // Play sounds
+        if (index == correctAnswerIndex)
         {
             score++;
-            if(progressSlider !=null)
-                progressSlider.value=score;
+            if(progressSlider != null)
+                progressSlider.value = score;
+
+            if (correctSound != null)
+                audioSource.PlayOneShot(correctSound);
         }
-        answered=true;
+        else
+        {
+            if (wrongSound != null)
+                audioSource.PlayOneShot(wrongSound);
+        }
+
+        answered = true;
     }
 
     public void NextQuestion()
     {
         currentIndex++;
-        if (currentIndex<questions.Length)
+        if (currentIndex < questions.Length)
             LoadQuestion(currentIndex);
         else
             Debug.Log("Quiz Finished!");    
@@ -83,9 +103,10 @@ public class QuizManager : MonoBehaviour
     public void ResetQuestion()
     {
         foreach(var t in answerTexts)
-            t.color=Color.white;
+            t.color = Color.white;
 
-        answered=false;    
+        answered = false;    
     }
 }
-            
+
+     
