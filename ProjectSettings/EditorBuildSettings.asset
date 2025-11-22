@@ -12,6 +12,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Quiz.unity
     guid: 3985b0587578b462b8d3b91a8e117fd1
   - enabled: 1
+    path: Assets/Scenes/S1.unity
+    guid: 91cd08bebf54ba2449d0d3f51f61c59d
+  - enabled: 0
+    path: Assets/Scenes/S2.unity
+    guid: 4e72bc154012e624a88b324553b9f309
+  - enabled: 1
     path: Assets/Scenes/Distillation Column.unity
     guid: e3583a27040b8364ea669580f78dc022
   - enabled: 1
