@@ -365,7 +365,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &79539872
 RectTransform:
   m_ObjectHideFlags: 0
@@ -632,6 +632,7 @@ GameObject:
   - component: {fileID: 141948011}
   - component: {fileID: 141948013}
   - component: {fileID: 141948012}
+  - component: {fileID: 141948014}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -681,7 +682,7 @@ MonoBehaviour:
   m_text: Next Question
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7f26bf4e00d774191bb9e961ae1c8f87, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 8553378972194776690, guid: 7f26bf4e00d774191bb9e961ae1c8f87, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -705,13 +706,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -746,7 +747,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &141948013
@@ -757,6 +758,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 141948010}
   m_CullTransparentMesh: 1
+--- !u!114 &141948014
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 141948010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 361989db7cbd246a88537a145cb35105, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LocalizedTMP
+  key: quiz.button
 --- !u!1 &249469480
 GameObject:
   m_ObjectHideFlags: 0
@@ -904,6 +918,7 @@ GameObject:
   - component: {fileID: 260279140}
   - component: {fileID: 260279139}
   - component: {fileID: 260279138}
+  - component: {fileID: 260279141}
   m_Layer: 5
   m_Name: Right
   m_TagString: Untagged
@@ -940,7 +955,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
+    rgba: 4294638335
   m_fontColor: {r: 1, g: 0.9803922, b: 0.9803922, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -958,10 +973,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 20
+  m_fontSize: 18
   m_fontSizeBase: 20
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
@@ -970,7 +985,7 @@ MonoBehaviour:
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
-  m_lineSpacing: 0
+  m_lineSpacing: 15
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
@@ -1026,9 +1041,22 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 25, y: 50}
+  m_AnchoredPosition: {x: 29, y: 63}
   m_SizeDelta: {x: 400, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &260279141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 260279137}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 361989db7cbd246a88537a145cb35105, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LocalizedTMP
+  key: quiz.q4.correct
 --- !u!1 &276176078
 GameObject:
   m_ObjectHideFlags: 0
@@ -1176,6 +1204,7 @@ GameObject:
   - component: {fileID: 319227049}
   - component: {fileID: 319227051}
   - component: {fileID: 319227050}
+  - component: {fileID: 319227052}
   m_Layer: 5
   m_Name: Question
   m_TagString: Untagged
@@ -1199,7 +1228,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 10, y: 50}
+  m_AnchoredPosition: {x: 10, y: 56}
   m_SizeDelta: {x: 330, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &319227050
@@ -1225,13 +1254,13 @@ MonoBehaviour:
   m_text: When should you remove your gloves?
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7f26bf4e00d774191bb9e961ae1c8f87, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 8553378972194776690, guid: 7f26bf4e00d774191bb9e961ae1c8f87, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
+    rgba: 4294638335
   m_fontColor: {r: 1, g: 0.9803922, b: 0.9803922, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -1261,7 +1290,7 @@ MonoBehaviour:
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
-  m_lineSpacing: 0
+  m_lineSpacing: -5
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
@@ -1290,7 +1319,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &319227051
@@ -1301,6 +1330,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 319227048}
   m_CullTransparentMesh: 1
+--- !u!114 &319227052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 319227048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 361989db7cbd246a88537a145cb35105, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LocalizedTMP
+  key: quiz.question5
 --- !u!1 &351573507
 GameObject:
   m_ObjectHideFlags: 0
@@ -1448,6 +1490,7 @@ GameObject:
   - component: {fileID: 353450681}
   - component: {fileID: 353450683}
   - component: {fileID: 353450682}
+  - component: {fileID: 353450684}
   m_Layer: 5
   m_Name: Question
   m_TagString: Untagged
@@ -1525,7 +1568,7 @@ MonoBehaviour:
   m_fontSize: 20
   m_fontSizeBase: 20
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
@@ -1574,6 +1617,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 353450680}
   m_CullTransparentMesh: 1
+--- !u!114 &353450684
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 353450680}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 361989db7cbd246a88537a145cb35105, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LocalizedTMP
+  key: quiz.question2
 --- !u!1 &384678596
 GameObject:
   m_ObjectHideFlags: 0
@@ -1737,7 +1793,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -160, y: -122}
+  m_AnchoredPosition: {x: -160, y: -132}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &401498299
@@ -2003,7 +2059,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -160, y: -75}
+  m_AnchoredPosition: {x: -160, y: -46}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &443876588
@@ -2441,7 +2497,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -145, y: -122}
+  m_AnchoredPosition: {x: -145, y: -124}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &549599937
@@ -2574,7 +2630,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -145, y: -75}
+  m_AnchoredPosition: {x: -145, y: -42}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &567335871
@@ -2843,7 +2899,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 80, y: -160}
+  m_AnchoredPosition: {x: 80, y: -171}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &595362698
@@ -4478,7 +4534,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -145, y: -52}
+  m_AnchoredPosition: {x: -145, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &867696254
@@ -4586,6 +4642,7 @@ GameObject:
   - component: {fileID: 883767367}
   - component: {fileID: 883767369}
   - component: {fileID: 883767368}
+  - component: {fileID: 883767370}
   m_Layer: 5
   m_Name: T5
   m_TagString: Untagged
@@ -4635,7 +4692,7 @@ MonoBehaviour:
   m_text: Question 5
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7f26bf4e00d774191bb9e961ae1c8f87, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 8553378972194776690, guid: 7f26bf4e00d774191bb9e961ae1c8f87, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4711,6 +4768,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 883767366}
   m_CullTransparentMesh: 1
+--- !u!114 &883767370
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 883767366}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 361989db7cbd246a88537a145cb35105, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LocalizedTMP
+  key: quiz.title5
 --- !u!1 &906860908
 GameObject:
   m_ObjectHideFlags: 0
@@ -4722,6 +4792,7 @@ GameObject:
   - component: {fileID: 906860911}
   - component: {fileID: 906860910}
   - component: {fileID: 906860909}
+  - component: {fileID: 906860912}
   m_Layer: 5
   m_Name: Wrong
   m_TagString: Untagged
@@ -4749,7 +4820,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\n\n\n\n\n     To use your phone \n     When grabbing clean glasswear\n    
+  m_text: "\n\n\n\n     To use your phone\n \n     When grabbing clean glasswear\n\n    
     Never\n     "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4759,7 +4830,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
+    rgba: 4294638335
   m_fontColor: {r: 1, g: 0.9803922, b: 0.9803922, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -4777,10 +4848,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 20
+  m_fontSize: 18
   m_fontSizeBase: 20
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
@@ -4845,9 +4916,22 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 10, y: 50}
+  m_AnchoredPosition: {x: 10, y: 68}
   m_SizeDelta: {x: 330, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &906860912
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 906860908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 361989db7cbd246a88537a145cb35105, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LocalizedTMP
+  key: quiz.q5.wrong
 --- !u!1 &934658553
 GameObject:
   m_ObjectHideFlags: 0
@@ -5305,6 +5389,7 @@ GameObject:
   - component: {fileID: 1001252621}
   - component: {fileID: 1001252620}
   - component: {fileID: 1001252619}
+  - component: {fileID: 1001252622}
   m_Layer: 5
   m_Name: Wrong
   m_TagString: Untagged
@@ -5430,6 +5515,19 @@ RectTransform:
   m_AnchoredPosition: {x: 10, y: 50}
   m_SizeDelta: {x: 330, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1001252622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1001252618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 361989db7cbd246a88537a145cb35105, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LocalizedTMP
+  key: quiz.q3.wrong
 --- !u!1 &1043083546
 GameObject:
   m_ObjectHideFlags: 0
@@ -5577,6 +5675,7 @@ GameObject:
   - component: {fileID: 1088572062}
   - component: {fileID: 1088572064}
   - component: {fileID: 1088572063}
+  - component: {fileID: 1088572065}
   m_Layer: 5
   m_Name: T2
   m_TagString: Untagged
@@ -5702,6 +5801,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1088572061}
   m_CullTransparentMesh: 1
+--- !u!114 &1088572065
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1088572061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 361989db7cbd246a88537a145cb35105, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LocalizedTMP
+  key: quiz.title2
 --- !u!1 &1130106605
 GameObject:
   m_ObjectHideFlags: 0
@@ -6115,6 +6227,7 @@ GameObject:
   - component: {fileID: 1248486927}
   - component: {fileID: 1248486929}
   - component: {fileID: 1248486928}
+  - component: {fileID: 1248486930}
   m_Layer: 5
   m_Name: Wrong
   m_TagString: Untagged
@@ -6240,6 +6353,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1248486926}
   m_CullTransparentMesh: 1
+--- !u!114 &1248486930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1248486926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 361989db7cbd246a88537a145cb35105, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LocalizedTMP
+  key: quiz.q2.wrong
 --- !u!1 &1275280111
 GameObject:
   m_ObjectHideFlags: 0
@@ -6258,7 +6384,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1275280112
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6392,6 +6518,7 @@ GameObject:
   - component: {fileID: 1276459650}
   - component: {fileID: 1276459652}
   - component: {fileID: 1276459651}
+  - component: {fileID: 1276459653}
   m_Layer: 5
   m_Name: Question
   m_TagString: Untagged
@@ -6415,7 +6542,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 10, y: 50}
+  m_AnchoredPosition: {x: 10, y: 56}
   m_SizeDelta: {x: 330, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1276459651
@@ -6441,13 +6568,13 @@ MonoBehaviour:
   m_text: What is the correct action if you break a glass beaker in the lab?
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7f26bf4e00d774191bb9e961ae1c8f87, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 8553378972194776690, guid: 7f26bf4e00d774191bb9e961ae1c8f87, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
+    rgba: 4294638335
   m_fontColor: {r: 1, g: 0.9803922, b: 0.9803922, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -6506,7 +6633,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1276459652
@@ -6517,6 +6644,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1276459649}
   m_CullTransparentMesh: 1
+--- !u!114 &1276459653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1276459649}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 361989db7cbd246a88537a145cb35105, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LocalizedTMP
+  key: quiz.question4
 --- !u!1 &1312980299
 GameObject:
   m_ObjectHideFlags: 0
@@ -6890,6 +7030,7 @@ GameObject:
   - component: {fileID: 1388377520}
   - component: {fileID: 1388377522}
   - component: {fileID: 1388377521}
+  - component: {fileID: 1388377523}
   m_Layer: 5
   m_Name: T1
   m_TagString: Untagged
@@ -7015,6 +7156,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1388377519}
   m_CullTransparentMesh: 1
+--- !u!114 &1388377523
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1388377519}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 361989db7cbd246a88537a145cb35105, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LocalizedTMP
+  key: quiz.title1
 --- !u!1 &1394781194
 GameObject:
   m_ObjectHideFlags: 0
@@ -7026,6 +7180,7 @@ GameObject:
   - component: {fileID: 1394781195}
   - component: {fileID: 1394781197}
   - component: {fileID: 1394781196}
+  - component: {fileID: 1394781198}
   m_Layer: 5
   m_Name: T3
   m_TagString: Untagged
@@ -7151,6 +7306,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1394781194}
   m_CullTransparentMesh: 1
+--- !u!114 &1394781198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1394781194}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 361989db7cbd246a88537a145cb35105, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LocalizedTMP
+  key: quiz.title3
 --- !u!1 &1436577744
 GameObject:
   m_ObjectHideFlags: 0
@@ -7295,6 +7463,7 @@ GameObject:
   - component: {fileID: 1444706287}
   - component: {fileID: 1444706289}
   - component: {fileID: 1444706288}
+  - component: {fileID: 1444706290}
   m_Layer: 5
   m_Name: Right
   m_TagString: Untagged
@@ -7420,6 +7589,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1444706286}
   m_CullTransparentMesh: 1
+--- !u!114 &1444706290
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1444706286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 361989db7cbd246a88537a145cb35105, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LocalizedTMP
+  key: quiz.q2.correct
 --- !u!1 &1449127335
 GameObject:
   m_ObjectHideFlags: 0
@@ -7584,6 +7766,7 @@ GameObject:
   - component: {fileID: 1490683231}
   - component: {fileID: 1490683230}
   - component: {fileID: 1490683229}
+  - component: {fileID: 1490683232}
   m_Layer: 5
   m_Name: Right
   m_TagString: Untagged
@@ -7621,7 +7804,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
+    rgba: 4294638335
   m_fontColor: {r: 1, g: 0.9803922, b: 0.9803922, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -7639,10 +7822,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 20
+  m_fontSize: 18
   m_fontSizeBase: 20
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
@@ -7707,9 +7890,22 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 37, y: 50}
+  m_AnchoredPosition: {x: 37, y: 28}
   m_SizeDelta: {x: 330, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1490683232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1490683228}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 361989db7cbd246a88537a145cb35105, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LocalizedTMP
+  key: quiz.q5.correct
 --- !u!1 &1509243320
 GameObject:
   m_ObjectHideFlags: 0
@@ -7857,6 +8053,7 @@ GameObject:
   - component: {fileID: 1594410274}
   - component: {fileID: 1594410276}
   - component: {fileID: 1594410275}
+  - component: {fileID: 1594410277}
   m_Layer: 5
   m_Name: Question
   m_TagString: Untagged
@@ -7983,6 +8180,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1594410273}
   m_CullTransparentMesh: 1
+--- !u!114 &1594410277
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1594410273}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 361989db7cbd246a88537a145cb35105, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LocalizedTMP
+  key: quiz.question3
 --- !u!1 &1599904081
 GameObject:
   m_ObjectHideFlags: 0
@@ -7994,6 +8204,7 @@ GameObject:
   - component: {fileID: 1599904082}
   - component: {fileID: 1599904084}
   - component: {fileID: 1599904083}
+  - component: {fileID: 1599904085}
   m_Layer: 5
   m_Name: Wrong
   m_TagString: Untagged
@@ -8120,6 +8331,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1599904081}
   m_CullTransparentMesh: 1
+--- !u!114 &1599904085
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1599904081}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 361989db7cbd246a88537a145cb35105, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LocalizedTMP
+  key: quiz.q1.wrong
 --- !u!1 &1600749012
 GameObject:
   m_ObjectHideFlags: 0
@@ -8292,7 +8516,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -160, y: -52}
+  m_AnchoredPosition: {x: -160, y: -8}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1619162463
@@ -8400,6 +8624,7 @@ GameObject:
   - component: {fileID: 1642945554}
   - component: {fileID: 1642945553}
   - component: {fileID: 1642945552}
+  - component: {fileID: 1642945555}
   m_Layer: 5
   m_Name: Wrong
   m_TagString: Untagged
@@ -8427,7 +8652,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\n\n\n\n\n     Pick up the shards with your hands\n     Kick it aside\n\n    
+  m_text: "\n\n\n\n     Pick up the shards with your hands\n\n     Kick it aside\n\n\n\n    
     Leave it on the floor\n     "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -8437,7 +8662,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
+    rgba: 4294638335
   m_fontColor: {r: 1, g: 0.9803922, b: 0.9803922, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -8455,10 +8680,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 20
+  m_fontSize: 18
   m_fontSizeBase: 20
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
@@ -8523,9 +8748,22 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 25, y: 50}
+  m_AnchoredPosition: {x: 29, y: 63}
   m_SizeDelta: {x: 400, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1642945555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1642945551}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 361989db7cbd246a88537a145cb35105, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LocalizedTMP
+  key: quiz.q4.wrong
 --- !u!1 &1658976472
 GameObject:
   m_ObjectHideFlags: 0
@@ -8670,6 +8908,7 @@ GameObject:
   - component: {fileID: 1673135222}
   - component: {fileID: 1673135223}
   - component: {fileID: 1673135224}
+  - component: {fileID: 1673135225}
   m_Layer: 5
   m_Name: Right
   m_TagString: Untagged
@@ -8795,6 +9034,19 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &1673135225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1673135221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 361989db7cbd246a88537a145cb35105, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LocalizedTMP
+  key: quiz.q1.correct
 --- !u!1 &1679340305
 GameObject:
   m_ObjectHideFlags: 0
@@ -8842,6 +9094,7 @@ GameObject:
   - component: {fileID: 1680358363}
   - component: {fileID: 1680358362}
   - component: {fileID: 1680358361}
+  - component: {fileID: 1680358364}
   m_Layer: 5
   m_Name: Right
   m_TagString: Untagged
@@ -8967,6 +9220,19 @@ RectTransform:
   m_AnchoredPosition: {x: 10, y: 50}
   m_SizeDelta: {x: 330, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1680358364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1680358360}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 361989db7cbd246a88537a145cb35105, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LocalizedTMP
+  key: quiz.q3.correct
 --- !u!1 &1684937305
 GameObject:
   m_ObjectHideFlags: 0
@@ -8978,6 +9244,7 @@ GameObject:
   - component: {fileID: 1684937306}
   - component: {fileID: 1684937308}
   - component: {fileID: 1684937307}
+  - component: {fileID: 1684937309}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -9103,6 +9370,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1684937305}
   m_CullTransparentMesh: 1
+--- !u!114 &1684937309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1684937305}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 361989db7cbd246a88537a145cb35105, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LocalizedTMP
+  key: quiz.button
 --- !u!1 &1686756797
 GameObject:
   m_ObjectHideFlags: 0
@@ -9247,6 +9527,7 @@ GameObject:
   - component: {fileID: 1704774418}
   - component: {fileID: 1704774420}
   - component: {fileID: 1704774419}
+  - component: {fileID: 1704774421}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -9372,6 +9653,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1704774417}
   m_CullTransparentMesh: 1
+--- !u!114 &1704774421
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1704774417}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 361989db7cbd246a88537a145cb35105, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LocalizedTMP
+  key: quiz.button
 --- !u!1 &1711866895
 GameObject:
   m_ObjectHideFlags: 0
@@ -9383,6 +9677,7 @@ GameObject:
   - component: {fileID: 1711866896}
   - component: {fileID: 1711866898}
   - component: {fileID: 1711866897}
+  - component: {fileID: 1711866899}
   m_Layer: 5
   m_Name: Question
   m_TagString: Untagged
@@ -9459,10 +9754,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 20
+  m_fontSize: 18
   m_fontSizeBase: 20
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
@@ -9511,6 +9806,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1711866895}
   m_CullTransparentMesh: 1
+--- !u!114 &1711866899
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1711866895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 361989db7cbd246a88537a145cb35105, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LocalizedTMP
+  key: quiz.question1
 --- !u!1 &1727095228
 GameObject:
   m_ObjectHideFlags: 0
@@ -9805,7 +10113,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -145, y: -99}
+  m_AnchoredPosition: {x: -145, y: -84}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1748907620
@@ -10729,6 +11037,7 @@ GameObject:
   - component: {fileID: 1823974623}
   - component: {fileID: 1823974625}
   - component: {fileID: 1823974624}
+  - component: {fileID: 1823974626}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -10854,6 +11163,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1823974622}
   m_CullTransparentMesh: 1
+--- !u!114 &1823974626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1823974622}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 361989db7cbd246a88537a145cb35105, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LocalizedTMP
+  key: quiz.button
 --- !u!1 &1884573156
 GameObject:
   m_ObjectHideFlags: 0
@@ -11647,7 +11969,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -160, y: -99}
+  m_AnchoredPosition: {x: -160, y: -86}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2000205252
@@ -12547,6 +12869,7 @@ GameObject:
   - component: {fileID: 2129999294}
   - component: {fileID: 2129999296}
   - component: {fileID: 2129999295}
+  - component: {fileID: 2129999297}
   m_Layer: 5
   m_Name: T4
   m_TagString: Untagged
@@ -12596,7 +12919,7 @@ MonoBehaviour:
   m_text: Question 4
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7f26bf4e00d774191bb9e961ae1c8f87, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 8553378972194776690, guid: 7f26bf4e00d774191bb9e961ae1c8f87, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -12661,7 +12984,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &2129999296
@@ -12672,6 +12995,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2129999293}
   m_CullTransparentMesh: 1
+--- !u!114 &2129999297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2129999293}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 361989db7cbd246a88537a145cb35105, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LocalizedTMP
+  key: quiz.title4
 --- !u!1 &2137574399
 GameObject:
   m_ObjectHideFlags: 0
@@ -12683,6 +13019,7 @@ GameObject:
   - component: {fileID: 2137574400}
   - component: {fileID: 2137574402}
   - component: {fileID: 2137574401}
+  - component: {fileID: 2137574403}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -12732,7 +13069,7 @@ MonoBehaviour:
   m_text: Finish
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7f26bf4e00d774191bb9e961ae1c8f87, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 8553378972194776690, guid: 7f26bf4e00d774191bb9e961ae1c8f87, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -12756,13 +13093,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -12797,7 +13134,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &2137574402
@@ -12808,6 +13145,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2137574399}
   m_CullTransparentMesh: 1
+--- !u!114 &2137574403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2137574399}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 361989db7cbd246a88537a145cb35105, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LocalizedTMP
+  key: quiz.finishbutton
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
