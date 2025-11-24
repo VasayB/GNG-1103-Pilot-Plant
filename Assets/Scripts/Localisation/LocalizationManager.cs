@@ -139,7 +139,39 @@ public class LocalizationManager : MonoBehaviour
 
         english["panel.quitbutton"] = "Quit";
         french["panel.quitbutton"] = "Quitter";
-    
+
+        ///UI PANELS
+
+        english["panel1.title"] = "Water filtration";
+        french["panel1.title"] ="Filtration de l’eau";
+
+        english["panel1.body"] = "Removes solids and impurities from the water before it enters the pilot plant system. Water flows through a series of filter cartridges, each designed to capture particles of different sizes. Helps protect pumps, sensors, and downstream equipment from clogging or damage caused by contaminants.";
+        french["panel1.body"] ="Élimine les solides et les impuretés de l’eau avant qu’elle n’entre dans le système de l’usine pilote.L’eau circule à travers une série de cartouches filtrantes, chacune conçue pour capturer des particules de différentes tailles. Aide à protéger les pompes, les capteurs et l’équipement en aval contre l’obstruction ou les dommages causés par les contaminants.";
+
+        english["panel2.title"] = "Chemical feed tank";
+        french["panel2.title"] ="Réservoir d’alimentation chimique";
+
+        english["panel2.body"] = "This tank stores a prepared chemical solution that will be added into a system in controlled amounts. A dosing pump draws liquid from the tank through the small tubing connected to the lid. The chemical is injected into the system to adjust pH, add reagents, or condition the mixture.";
+        french["panel2.body"] ="Ce réservoir stocke une solution chimique préparée qui sera ajoutée dans un système en quantités contrôlées. Une pompe de dosage prélève le liquide du réservoir par le petit tube relié au couvercle. Le produit chimique est injecté dans le système pour ajuster le  pH, ajouter des réactifs ou conditionner le mélange.";
+
+        english["panel3.title"] = "Process control training pane";
+        french["panel3.title"] ="Panneau de formation au contrôle des procédés";
+
+        english["panel3.body"] = "The panel simulates how industrial process controls work using gauges, switches, and flow indicators. The system demonstrates how changes in one part of a process affect the rest of the equipment. It is used to teach basic troubleshooting, such as detecting leaks, blockages, or incorrect valve settings.";
+        french["panel3.body"] ="Le panneau simule le fonctionnement des systèmes de contrôle des procédés industriels à l’aide de manomètres, d’interrupteurs et d’indicateurs de débit. Le système démontre comment des changements dans une partie d’un procédé affectent le reste de l’équipement. Il est utilisé pour enseigner les bases du dépannage, comme la détection de fuites, de blocages ou de mauvais réglages de vannes.";
+
+        english["panel4.title"] = "Process control training rig";
+        french["panel4.title"] ="Banc de formation au contrôle des procédés";
+
+        english["panel4.body"] = "This unit demonstrates how fluid flow is measured, controlled, and regulated in an industrial system. Students adjust valves, pumps, and sensors to observe changes in pressure, flow rate, and system response. The rig includes a digital control interface that shows real-time data and allows tuning of control parameters.";
+        french["panel4.body"] ="Cette unité démontre comment l’écoulement d’un fluide est mesuré, contrôlé et régulé dans un système industriel. Les étudiants ajustent des vannes, des pompes et des capteurs pour observer les changements de pression, de débit et la réponse du système. Le banc comprend une interface de contrôle numérique qui affiche des données en temps réel et permet d’ajuster les paramètres de contrôle.";
+
+        english["panel5.title"] = "Packed bed reactor";
+        french["panel5.title"] ="Réacteur à lit fixe";
+
+        english["panel5.body"] = "Fluids are pumped through the packed column to study pressure drop, flow patterns, and mass transfer behavior. Packing materials help increase contact between the fluid and solid surfaces, improving reaction or absorption efficiency. This setup allows students to analyze how different flow rates and packing types influence reactor performance.";
+        french["panel5.body"] ="Les fluides sont pompés à travers la colonne remplie pour étudier la perte de charge, les régimes d’écoulement et le comportement de transfert de masse. Les matériaux de garnissage augmentent le contact entre le fluide et les surfaces solides, améliorant ainsi l’efficacité de la réaction ou de l’absorption. Ce montage permet aux étudiants d’analyser comment différents débits et types de garnissage influencent la performance du réacteur.";
+
     }
 
     /// <summary>
