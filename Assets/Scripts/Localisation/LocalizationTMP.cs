@@ -20,7 +20,10 @@ public class LocalizedTMP : MonoBehaviour
 
     IEnumerator DelayedRegister()
     {
-        yield return null; // wait 1 frame
+        // Wait until LocalizationManager.Instance exists
+        while (LocalizationManager.Instance == null)
+            yield return null;
+
         LocalizationManager.Instance.OnLanguageChanged += UpdateText;
         UpdateText();
     }
@@ -33,6 +36,7 @@ public class LocalizedTMP : MonoBehaviour
 
     void UpdateText()
     {
-        textField.text = LocalizationManager.Instance.Get(key);
+        if (textField != null && LocalizationManager.Instance != null)
+            textField.text = LocalizationManager.Instance.Get(key);
     }
 }

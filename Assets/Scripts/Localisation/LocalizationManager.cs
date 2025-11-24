@@ -54,11 +54,11 @@ public class LocalizationManager : MonoBehaviour
         english["quiz.question1"] = "What would immediately be used if your clothing caught fire or if a large chemical spill had occurred on your clothing?";
         french["quiz.question1"] = "Que devriez-vous utiliser immédiatement si vos vêtements prenaient en feu ou s’il y avait un grand déversement de produits chimiques sur vos vêtements?";
 
-        english["quiz.q1.correct"] = "Safety shower";
+        english["quiz.q1.correct"] = "\n\n\n\n\n\n     Safety shower";
         french["quiz.q1.correct"] = "\n\n\n\n\n\n     Une douche de sécurité";
 
         english["quiz.q1.wrong"] =
-         "Fire extinguisher\nEye wash station\nFire blanket";
+         "\n\n\n\n\n     Fire extinguisher\n\n     Eye wash station\n     Fire blanket";
         french["quiz.q1.wrong"] =
         "\n\n\n\n\n     Un extincteur d’incendie\n\n     Une douche oculaire\n     Une couverture anti-feu";
 
@@ -69,11 +69,11 @@ public class LocalizationManager : MonoBehaviour
         english["quiz.question2"] = "What should be worn in a laboratory at all times to decrease the likelihood of an eye injury?";
         french["quiz.question2"] = "Que devriez-vous porter en tout temps afin de diminuer les risques d’une blessure aux yeux?";
 
-        english["quiz.q2.correct"] = "Safety goggles";
+        english["quiz.q2.correct"] = "\n\n\n\n\n\n\n\n     Safety goggles";
         french["quiz.q2.correct"] = "\n\n\n\n\n\n\n\n     Des lunettes de sécurité";
 
         english["quiz.q2.wrong"] =
-        "Face shield\nRespiration mask\nFace mask";
+        "\n\n\n\n\n     Face shield\n     Respiration mask\n     Face mask";
         french["quiz.q2.wrong"] =
         "\n\n\n\n\n     Un écran facial\n     Un masque respiratoire\n     Un masque facial";
 
@@ -83,11 +83,11 @@ public class LocalizationManager : MonoBehaviour
         english["quiz.question3"] = "Which of the following is NOT appropriate personal protective equipment (PPE)?";
         french["quiz.question3"] = "Lequel de ces objets n’est PAS approprié en tant qu’équipement de protection individuelle (EPI)?";
 
-        english["quiz.q3.correct"] = "Open-toed sandals";
+        english["quiz.q3.correct"] = "\n\n\n\n\n\n     Open-toed sandals";
         french["quiz.q3.correct"] = "\n\n\n\n\n\n     Des sandales à bout ouvert";
 
         english["quiz.q3.wrong"] =
-        "Safety goggles\nLab coat\nNitrile gloves";
+        "\n\n\n\n\n     Safety goggles\n\n     Lab coat\n     Nitrile gloves";
         french["quiz.q3.wrong"] =
         "\n\n\n\n\n     Des lunettes de sécurité\n\n     Un sarrau\n     Des gants en nitrile";
 
@@ -98,12 +98,12 @@ public class LocalizationManager : MonoBehaviour
         french["quiz.question4"] = "Que devriez-vous faire si vous cassez un bécher en verre dans un laboratoire?";
 
         english["quiz.q4.correct"] =
-        "Sweep it up with a brush and dustpan";
+        "\n\n\n\n\n\n\n\n\n      Sweep it up with a brush and dustpan";
         french["quiz.q4.correct"] =
         "\n\n\n\n\n\n\n      Ramasser les éclats de verre avec un balai et      un porte-poussière";
 
         english["quiz.q4.wrong"] =
-        "Pick up the shards with your hands\nKick it aside\nLeave it on the floor";
+        "\n\n\n\n      Pick up the shards with your hands\n\n     Kick it aside\n\n     Leave it on the floor";
         french["quiz.q4.wrong"] =
         "\n\n\n\n      Ramasser les éclats de verre avec vos mains\n\n      Mettre les éclats de verre de côté en leur      donnant un coup de pied\n\n\n      Laisser les éclats de verre sur le plancher";
 
@@ -114,20 +114,31 @@ public class LocalizationManager : MonoBehaviour
         french["quiz.question5"] = "À quel moment devriez-vous enlever vos gants?";
 
         english["quiz.q5.correct"] =
-        "When leaving the lab or touching clean surfaces";
+        "\n\n\n\n\n\n\n\nWhen leaving the lab or touching clean surfaces";
         french["quiz.q5.correct"] =
         "\n\n\n\n\n\n\n\nLorsque vous quittez le laboratoire ou lorsque vous touchez des surfaces propres";
 
         english["quiz.q5.wrong"] =
-        "To use your phone\n.    When grabbing clean glassware\nNever";
+        "\n\n\n\n     To use your phone\n\n     When grabbing clean glassware\n\n     Never";
         french["quiz.q5.wrong"] =
         "\n\n\n\n     Afin d’utiliser son téléphone\n\n     Lorsque vous manipulez de la verrerie propre\n     En aucun cas";
     
         english["quiz.button"] = "NextQuestion";
         french["quiz.button"] = "Suivant";
 
+
+
         english["quiz.finishbutton"] = "Finish";
         french["quiz.finishbutton"] = "Terminer";
+
+        english["panel.resumebutton"] = "Resume";
+        french["panel.resumebutton"] = "Reprendre";
+
+        english["panel.restartbutton"] = "Restart";
+        french["panel.restartbutton"] = "Redémarrer";
+
+        english["panel.quitbutton"] = "Quit";
+        french["panel.quitbutton"] = "Quitter";
     
     }
 
