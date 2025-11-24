@@ -130,7 +130,6 @@ GameObject:
   - component: {fileID: 321922714}
   - component: {fileID: 321922716}
   - component: {fileID: 321922715}
-  - component: {fileID: 321922717}
   m_Layer: 5
   m_Name: Body
   m_TagString: Untagged
@@ -281,6 +280,7 @@ GameObject:
   - component: {fileID: 331956585}
   - component: {fileID: 331956584}
   - component: {fileID: 331956583}
+  - component: {fileID: 331956588}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
@@ -394,6 +394,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &331956588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 331956582}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd8bc716232393a418c3eda600ec6179, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SceneHotspot
+  nextScene: S4
 --- !u!1 &483923679
 GameObject:
   m_ObjectHideFlags: 0
@@ -405,7 +418,6 @@ GameObject:
   - component: {fileID: 483923680}
   - component: {fileID: 483923682}
   - component: {fileID: 483923681}
-  - component: {fileID: 483923683}
   m_Layer: 5
   m_Name: Body
   m_TagString: Untagged
@@ -2225,9 +2237,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3756453345482987077, guid: a3d8f6146ff2047a88861419cf06ca7f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1608550415}
-    - targetCorrespondingSourceObject: {fileID: 3756453345482987077, guid: a3d8f6146ff2047a88861419cf06ca7f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 642080552}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 933651363627322512, guid: a3d8f6146ff2047a88861419cf06ca7f, type: 3}
       insertIndex: -1
