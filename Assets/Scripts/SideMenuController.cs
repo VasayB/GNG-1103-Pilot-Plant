@@ -39,7 +39,7 @@ public class SideMenuController : MonoBehaviour
     public void Restart()
     {
         Time.timeScale = 1;
-        SceneManager.LoadScene("MainMenu"); 
+        SceneManager.LoadScene("Main Menu"); 
     }
 
     public void Quit()
