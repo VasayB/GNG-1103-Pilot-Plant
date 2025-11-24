@@ -817,7 +817,7 @@ PrefabInstance:
       objectReference: {fileID: 1910806697}
     - target: {fileID: 3291069767297833943, guid: f4205738b7b80924bbb68dc843005a31, type: 3}
       propertyPath: nextScene
-      value: S2Test
+      value: S2_resolved
       objectReference: {fileID: 0}
     - target: {fileID: 3291069767297833943, guid: f4205738b7b80924bbb68dc843005a31, type: 3}
       propertyPath: sceneToLoad
