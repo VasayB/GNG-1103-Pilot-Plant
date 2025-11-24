@@ -14,9 +14,18 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/S1.unity
     guid: 91cd08bebf54ba2449d0d3f51f61c59d
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/S2.unity
     guid: 4e72bc154012e624a88b324553b9f309
+  - enabled: 1
+    path: Assets/Scenes/S2Test.unity
+    guid: 78e4f17f4e06471429fa0166d86a4f10
+  - enabled: 1
+    path: Assets/Scenes/S4.unity
+    guid: a447bb43e5e02e641aa7e2bfee0af1c3
+  - enabled: 1
+    path: Assets/Scenes/S5.unity
+    guid: 65eb0636fedb014478da488875216e7c
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 2cc820e35a4344375b43ad6fdf9f37b9, type: 2}
     com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 8ad14f0aa4b2b45c0b7185464b784593, type: 2}
