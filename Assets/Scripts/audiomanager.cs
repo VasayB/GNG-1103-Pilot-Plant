@@ -1,47 +1,71 @@
 using UnityEngine;
 
+/// <summary>
+/// A singleton AudioManager that persists across scenes and automatically plays background music.
+/// Also allows playing one-shot sound effects.
+/// </summary>
+[RequireComponent(typeof(AudioSource))]
 public class AudioManager : MonoBehaviour
 {
-    [Header("--------Audio Source--------")]
-    [SerializeField] private AudioSource musicSource;
-
-    [Header("--------Audio Clip--------")]
-    public AudioClip background;
-
     public static AudioManager Instance { get; private set; }
+
+    [Header("Background Music")]
+    public AudioClip backgroundMusic;
+    [Range(0f, 1f)]
+    public float musicVolume = 1f;
+
+    private AudioSource musicSource;
 
     void Awake()
     {
-        // Ensure only one AudioManager exists
-        if (Instance == null)
-        {
-            Instance = this;
-            DontDestroyOnLoad(gameObject); // Keeps music playing between scenes
-        }
-        else
+        // If another instance exists, destroy this one
+        if (Instance != null && Instance != this)
         {
             Destroy(gameObject);
             return;
         }
 
-        if (musicSource != null && background != null)
+        Instance = this;
+        DontDestroyOnLoad(gameObject);
+
+        // Setup AudioSource
+        musicSource = GetComponent<AudioSource>();
+        musicSource.playOnAwake = false;
+        musicSource.loop = true;
+        musicSource.volume = musicVolume;
+
+        // Play background music if assigned
+        if (backgroundMusic != null && !musicSource.isPlaying)
         {
-            musicSource.clip = background;
-            musicSource.loop = true;
+            musicSource.clip = backgroundMusic;
             musicSource.Play();
         }
     }
 
-    // 🎚 Change volume
+    /// <summary>
+    /// Change the background music volume at runtime.
+    /// </summary>
     public void SetVolume(float volume)
     {
+        musicVolume = Mathf.Clamp01(volume);
         if (musicSource != null)
-            musicSource.volume = volume;
+            musicSource.volume = musicVolume;
     }
 
-    // Optional getter
+    /// <summary>
+    /// Returns the current music volume.
+    /// </summary>
     public float GetVolume()
     {
         return musicSource != null ? musicSource.volume : 0f;
+    }
+
+    /// <summary>
+    /// Play a short one-shot sound effect (e.g., quiz correct/wrong).
+    /// </summary>
+    public void PlaySFX(AudioClip clip, float volume = 1f)
+    {
+        if (clip == null) return;
+        musicSource.PlayOneShot(clip, Mathf.Clamp01(volume));
     }
 }

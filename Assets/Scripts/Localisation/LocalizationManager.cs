@@ -172,6 +172,33 @@ public class LocalizationManager : MonoBehaviour
         english["panel5.body"] = "Fluids are pumped through the packed column to study pressure drop, flow patterns, and mass transfer behavior. Packing materials help increase contact between the fluid and solid surfaces, improving reaction or absorption efficiency. This setup allows students to analyze how different flow rates and packing types influence reactor performance.";
         french["panel5.body"] ="Les fluides sont pompés à travers la colonne remplie pour étudier la perte de charge, les régimes d’écoulement et le comportement de transfert de masse. Les matériaux de garnissage augmentent le contact entre le fluide et les surfaces solides, améliorant ainsi l’efficacité de la réaction ou de l’absorption. Ce montage permet aux étudiants d’analyser comment différents débits et types de garnissage influencent la performance du réacteur.";
 
+        /// distillation column
+        english["distillation.b1"] = "Distillation Column Shaft";
+        french["distillation.b1"] = "Colonne de distillation";
+
+        english["distillation.h1"] = "The shaft is the tall main body of the distillation column where the actual separation happens. Inside, heated vapour rises from the bottom while cooler liquid flows down from the top. As they meet on each level inside the shaft, the vapour becomes cleaner and richer in the lighter component, while the liquid becomes heavier. By the time the vapour reaches the top, it is mostly the light substance, and the liquid at the bottom is mostly the heavy one. The shaft simply provides the vertical space for these repeated separation steps to occur.";
+        french["distillation.h1"] = "« La colonne de distillation, ou puits, est le corps principal et vertical où se déroule la séparation proprement dite. À l'intérieur, la vapeur chaude monte par le bas tandis que le liquide plus froid descend par le haut. À chaque niveau, la vapeur s'enrichit en composant léger, tandis que le liquide s'alourdit. En atteignant le sommet, la vapeur est principalement composée de la substance légère, et le liquide au fond est principalement composé de la substance lourde. Le puits fournit simplement l'espace vertical nécessaire à ces étapes de séparation successives";
+
+        english["distillation.b2"] = "Support Tanks";
+        french["distillation.b2"] = "Chars de soutien";
+
+        english["distillation.h2"] = "This section houses the support tanks that keep the distillation system running smoothly. These vessels store feed mixtures before they enter the column, hold cooling water used in temperature control, and collect liquid streams that leave different stages of the process. By providing extra capacity and steady flow, the tanks help balance changes in pressure, temperature, and liquid supply during operation. Even though they are separate from the column itself, this area plays a key role in maintaining stable, reliable performance throughout the entire distillation setup.\r\n";
+        french["distillation.h2"] = "Cette section abrite les réservoirs auxiliaires qui assurent le bon fonctionnement du système de distillation. Ces réservoirs stockent les mélanges d'alimentation avant leur entrée dans la colonne, contiennent l'eau de refroidissement utilisée pour la régulation de la température et recueillent les flux liquides provenant des différentes étapes du procédé. En offrant une capacité supplémentaire et un débit constant, les réservoirs contribuent à compenser les variations de pression, de température et d'alimentation en liquide pendant le fonctionnement. Bien qu'ils soient séparés de la colonne elle-même, cette zone joue un rôle essentiel dans le maintien de performances stables et fiables de l'ensemble du système de distillation.";
+
+        /// instructions
+        english["scene.instructions"] = "Click once to view the information.\r\nClick again to hide.";
+        french["scene.instructions"] = "Cliquez une fois pour afficher les informations. \r\nCliquez à nouveau pour les masquer.";
+
+        english["video.instructions"] = "Click the button to play the video.";
+        french["video.instructions"] = "Cliquez sur le bouton pour lire la vidéo.";
+
+        ///scene switch hotspot
+        english["scene.hotspot"] = "Click me!";
+        french["scene.hotspot"] = "« Cliquez-moi ! »";
+
+        ///end
+        english["end.tour"] = "Tour finished!";
+        french["end.tour"] = "Visite terminée !";
     }
 
     /// <summary>

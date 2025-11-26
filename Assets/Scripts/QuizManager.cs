@@ -136,7 +136,7 @@ public class QuizManager : MonoBehaviour
             // Show final score
             if (finalScoreText != null)
             {
-                finalScoreText.text = "Your Score: " + score + "/" + questions.Length
+                finalScoreText.text = "Score: " + score + "/" + questions.Length
                                       + " (" + percentage.ToString("F1") + "%)";
                 finalScoreText.gameObject.SetActive(true);
             }
