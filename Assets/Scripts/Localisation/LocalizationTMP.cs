@@ -6,21 +6,27 @@ using System.Collections;
 public class LocalizedTMP : MonoBehaviour
 {
     public string key;
-    TMP_Text textField;
+    private TMP_Text textField;
 
     void Awake()
     {
         textField = GetComponent<TMP_Text>();
-    }
 
-    void OnEnable()
-    {
-        StartCoroutine(DelayedRegister());
+        // Register immediately if manager exists
+        if (LocalizationManager.Instance != null)
+        {
+            LocalizationManager.Instance.OnLanguageChanged += UpdateText;
+            UpdateText();
+        }
+        else
+        {
+            // Wait for manager to exist
+            StartCoroutine(DelayedRegister());
+        }
     }
 
     IEnumerator DelayedRegister()
     {
-        // Wait until LocalizationManager.Instance exists
         while (LocalizationManager.Instance == null)
             yield return null;
 
@@ -28,13 +34,13 @@ public class LocalizedTMP : MonoBehaviour
         UpdateText();
     }
 
-    void OnDisable()
+    void OnDestroy()
     {
         if (LocalizationManager.Instance != null)
             LocalizationManager.Instance.OnLanguageChanged -= UpdateText;
     }
 
-    void UpdateText()
+    public void UpdateText()
     {
         if (textField != null && LocalizationManager.Instance != null)
             textField.text = LocalizationManager.Instance.Get(key);

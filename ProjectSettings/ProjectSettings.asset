@@ -849,8 +849,8 @@ PlayerSettings:
   editorAssembliesCompatibilityLevel: 1
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
-  metroPackageName: GNG 1103 Pilot Plant Project
-  metroPackageVersion: 
+  metroPackageName: GNG1103PilotPlantProject
+  metroPackageVersion: 1.0.0.0
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
@@ -858,7 +858,7 @@ PlayerSettings:
   metroCertificateNotAfter: 0000000000000000
   metroApplicationDescription: GNG 1103 Pilot Plant Project
   wsaImages: {}
-  metroTileShortName: 
+  metroTileShortName: GNG 1103 Pilot Plant Project
   metroTileShowName: 0
   metroMediumTileShowName: 0
   metroLargeTileShowName: 0

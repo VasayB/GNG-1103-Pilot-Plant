@@ -6,16 +6,10 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Main Menu.unity
-    guid: d0b4749f752d4493e9ac417fe90eb79d
-  - enabled: 1
-    path: Assets/Scenes/Quiz.unity
-    guid: 3985b0587578b462b8d3b91a8e117fd1
-  - enabled: 1
     path: Assets/Scenes/S1.unity
     guid: 91cd08bebf54ba2449d0d3f51f61c59d
   - enabled: 1
-    path: Assets/Scenes/S2_resolved.unity
+    path: Assets/Scenes/S2.unity
     guid: d0f1319dce2ab4f8fbf7c4a90abd2373
   - enabled: 1
     path: Assets/Scenes/S4.unity
@@ -23,7 +17,14 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/S5.unity
     guid: 65eb0636fedb014478da488875216e7c
+  - enabled: 1
+    path: Assets/Scenes/S6.unity
+    guid: 9e4cb7264e51ae14f8c7dc053a726cc2
+  - enabled: 1
+    path: Assets/Scenes/S7.unity
+    guid: e3583a27040b8364ea669580f78dc022
   m_configObjects:
+    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 43a1e4e6cf17b4d0db80bd9b67bd98f5, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 2cc820e35a4344375b43ad6fdf9f37b9, type: 2}
     com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 8ad14f0aa4b2b45c0b7185464b784593, type: 2}
   m_UseUCBPForAssetBundles: 0
